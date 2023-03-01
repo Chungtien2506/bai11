@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bangcuuchuong</title>
+</head>
+<body>
+<h1>Bảng cửu chương</h1>
+
+</body>
+<script>
+    let board;
+    let a;
+    let b;
+    board = "<table border='1' width='300' cellspacing='0' cellpadding='15'>";
+    for (a = 1;a <= 10;a++) {
+        board = board + "<tr>";
+    for (b = 1;b <= 10;b++) {
+       board = board + "<td>" + b + "*" + a + "=" + a * b + "</td>";
+    }
+       board = board + "</tr>";
+        // j = 1;
+    }
+    board =board + "</table>";
+    document.write(board);
+</script>
+</html>
